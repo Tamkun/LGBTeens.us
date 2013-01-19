@@ -154,11 +154,11 @@
             <p>
                 SLAPASS stands for Sex, Location, Age, Picture, Aspirations or Goals, Sexuality, and Starsign. <br><br>
                 What's
-                this information used for? It's so that others in the chat can know who you are. <b>All they need to do
+                this information used for? It's so that others in the chat can know who you are. <br><b>All they need to do
                 is
-                <code>!info [username]</code> and it gives them that user's SLAPASS information.</b> If you don't wnat
+                <code>!info [username]</code> and it gives them that user's SLAPASS information.</b> If you don't want
                 to
-                have one, and stay anonymous, that's fine. <br><b>But if you do want to, just do the following command
+                have one, and stay anonymous, that's fine. <br><br><b>But if you do want to, just do the following command
                 in
                 the
                 chat:
