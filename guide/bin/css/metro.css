@@ -1,0 +1,139 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700,400);
+
+body {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, input {
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+.navbar .brand {
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+}
+
+/* Metro it! */
+.alert, .hero-unit, .label, input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"]{
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+/**
+ * purple: #852b99
+ * red:    #c53727
+ * green:  #35aa47
+ * blue:   #4d90fe
+ */
+.metro-block {
+    padding-left: 25px;
+    padding-top: 25px;
+    height: 175px;
+    width: 245px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.hero-unit a h1,
+.hero-unit h1 a,
+.hero-unit p a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.hero-unit p, .metro-block p {
+    font-family: "Open Sans", Verdana;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+.hero-unit.green, .metro-block.green {
+    background: #35aa47;
+    color: #fff;
+}
+
+.hero-unit.red, .metro-block.red {
+    background: #c53727;
+    color: #fff;
+}
+
+.hero-unit.purple, .metro-block.purple {
+    background: #852b99;
+    color: #fff;
+}
+
+.hero-unit.blue, .metro-block.blue {
+    background: #4d90fe;
+    color: #fff;
+}
+
+.form-signin {
+    max-width: 300px;
+    padding: 19px 29px 29px;
+    margin: 0 auto 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+}
+
+.form-signin h2 {
+    width: 100%;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.form-signin input[type="text"],
+.form-signin input[type="password"] {
+    font-size: 16px;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 7px 9px;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: #666;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+}
+
+.m-btn.block {
+    width: 100%;
+}
