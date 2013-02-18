@@ -17,11 +17,13 @@
 
         .container {
             margin: 0 auto;
-            width: 900px;
+            max-width: 900px;
+            width:100%;
         }
 
         .container .wrap {
-            width: 600px;
+            max-width: 600px;
+            width:90%;
             margin: 0 auto;
         }
 
