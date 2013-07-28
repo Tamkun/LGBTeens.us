@@ -1,0 +1,98 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+    <section id="connecting">
+        <header><h2>Connecting</h2></header>
+        <p>
+            So, you want to get on the chat?
+
+            To do that, you might want to first know what you're connecting to. It's called IRC, and you can <a
+                    href="http://en.wikipedia.org/wiki/Internet_Relay_Chat" target="_blank">read more
+                about it on Wikipedia</a>.<br><br>
+
+            If you have no idea what IRC is and are a newbie, feel free to click the button below to open a new window
+            to chat in. Otherwise, if you have a client and know what you're doing, then feel free to connect with these
+            details and skip ahead to the next chapter.<br><br>
+
+            For those who aren't as familiar, you might've noticed the term "client." There exists a client for almost
+            every OS existent, popular ones include Hexchat (free) and mIRC (paid), and if you become a regular to IRC,
+            you'll eventually want to get a client.
+            <br><br>
+
+            <a href="http://chat.lgbteens.us/" target="_blank">Start Chatting Now</a>
+            <br><br>
+            Once you've connected, you're going to want to change your nickname, to do this do /nick [username], of
+            course removing the brackets and replacing "username" with your desired username.
+        </p>
+    </section>
+
+
+    <section id="howto">
+        <header><h2>How to IRC</h2></header>
+        <p>
+            There are many accepted rules to being on IRC, one such courtesy is when talking to somebody directly, to
+            append their nickname at the beginning of the message.
+            <br><br>
+            Most clients available have username auto-complete, so you should only need to type the first few letters
+            then be able to hit the [tab] key and it should finish the username for you, then when you send the message,
+            they will receive a notification.
+            <br><br>
+            The same applies to you, if you are mentioned in a message, your client should beep or show a flashing
+            notification.
+            <br><br>
+            If you would like to send a personal message, to your internet lover per se, that only that specific user
+            can see, all you need to do is<br>
+            <code>/msg [username] Hey gurl</code>
+
+        </p>
+    </section>
+    <section id="nickserv">
+        <header><h2>Registering with NickServ</h2></header>
+        <p>So you're all happy on IRC, everything is sunshine and rainbows. Let's say your nick is John. You leave for
+            an hour to go shopping with your besties, however when you come back, you try and join with the nick John,
+            and oh noes! It's taken!
+            <br><br>
+
+            That's what NickServ is for! NickServ is a service provided by the IRC network (the people that run the chat
+            service), which helps user identify themselves, and keeps other people from stealing your name.
+            <br><br>
+            It does this by having you register your name with a password and an email, and any time somebody connects
+            with your name (including you), it reqires them to enter your password to allow them to continue to use that
+            nickname.
+            <br><br>
+            To register a nickname, all you need to do is:<br>
+            <code>/msg nickserv register [password] [email]</code><br>
+            Replace password and email respectively, and remove the brackets... and you're done!
+            <br><br>
+            NickServ should now have sent an email asking you to verify the registration, all you need to do is follow
+            the instructions in the email to finish the registration process.
+            <br><br>
+            Now, take note, from now on, once you connect with your name, you're going to need to enter your password,
+            you can do this by doing:<br>
+            <code>/msg nickserv identify [password]</code><br>
+            Once again, remove the brackets and replace password with your password. And that's it!
+            <br><br>
+            You're logged in. Most clients have an option to automatically log you in with NickServ, including the web
+            client, just click the services checkbox and enter your password.</p>
+    </section>
+    <section id="slapass">
+        <header><h2>SLAPASS (Tell us About Yourself)</h2></header>
+        <p>
+            <b>SLAPASS stands for Sex, Location, Age, Picture, Aspirations or Goals, Sexuality, and Starsign.</b>
+            <br><br>
+            What's this information used for? It's so that others in the chat can know who you are.
+            All they need to do is !info [username] and it gives them that user's SLAPASS information. If you don't want
+            to have one, and stay anonymous, that's fine.
+            <br><br>
+            But if you do want to, just do the following command in the chat:<br>
+            <code>!add Sex / Location / Age / Picture / Aspirations / Sexuality / Starsign</code><br>
+            That will add your information and you should get a confirming message saying that the data was saved.
+            <br><br>
+            Note, when adding your information, make sure the "/" have spaces around them. This makes it easier for
+            users to click your photo link.
+        </p>
+    </section>
+
+    <div class="clearfix"></div>
+{% endblock %}
