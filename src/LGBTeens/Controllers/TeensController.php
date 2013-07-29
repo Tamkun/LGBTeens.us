@@ -2,10 +2,11 @@
 
 namespace LGBTeens\Controllers;
 
-use Devil\HTTP\SecureSession;
-use Devil\MVC\Controller;
-use Devil\MVC\Request;
-use LGBTeens\View\TeensRenderSettings;
+use DevilFW\Session\SecureSession;
+use DevilFW\Core\Request;
+use DevilFW\Core\Response;
+use DevilFW\Core\Controller;
+use LGBTeens\View\TeensDefaultSettings;
 
 abstract class TeensController extends Controller
 {
@@ -15,16 +16,17 @@ abstract class TeensController extends Controller
     {
         $this->request  = $request;
         $this->session  = $session;
-        $this->defaults = new TeensRenderSettings();
+        $this->response = new Response();
+        $this->defaults = new TeensDefaultSettings();
     }
 
 
     public function actionMissing()
     {
         try {
-            $this->request->render('error/404', $this->defaults);
+            $this->render('error/404');
         } catch (\Twig_Error_Loader $e) {
-            $this->request->renderText("<center><h1>404 File Not Found</h1></center>");
+            $this->response->renderText("<center><h1>404 File Not Found</h1></center>");
         }
     }
 }

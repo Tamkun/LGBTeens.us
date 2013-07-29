@@ -2,9 +2,9 @@
 
 namespace LGBTeens\View;
 
-use Devil\View\RenderSettings;
+use DevilFW\View\DefaultSettings;
 
-class TeensRenderSettings extends RenderSettings
+class TeensDefaultSettings extends DefaultSettings
 {
     public function __construct()
     {

@@ -2,4 +2,4 @@
 
 require '../init.php';
 
-\Devil\MVC\Dispatcher::dispatch();
+\DevilFW\Core\Dispatcher::dispatch();

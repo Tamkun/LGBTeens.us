@@ -6,6 +6,6 @@ class GuideController extends TeensController
 {
     public function indexAction()
     {
-        $this->request->render('guide/index', $this->defaults);
+        $this->render('guide/index');
     }
 }
